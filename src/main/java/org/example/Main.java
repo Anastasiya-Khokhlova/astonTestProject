@@ -15,7 +15,7 @@ public class Main {
         printLine("привет", 3);
         System.out.println("Задание 9 " + checkLeapYear(2024));
         System.out.println("Задание 10");
-        int[] a = {0, 1, 0, 1, 1,};
+        int[] a = {0, 1, 0, 1, 1};
         replace(a);
         System.out.println();
         System.out.println("Задание 11");
