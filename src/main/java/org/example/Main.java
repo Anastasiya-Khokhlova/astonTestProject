@@ -3,6 +3,52 @@ package org.example;
 
 public class Main {
     public static void main(String[] args) {
+        //lesson2();
+        lesson6part1();
+        System.out.println();
+        lesson6part2();
+    }
+
+    public static void lesson6part1() {
+        Employee[] employees = new Employee[5];
+        employees[0] = new Employee("Ivanov Ivan Ivanovich", "Engineer",
+                "ivanov@gmail.com", "89271111111", 30000, 32);
+        employees[0].employeeInfo();
+        employees[1] = new Employee("Petrov Petr Petrovich", "Engineer",
+                "petrov@gmail.com", "89272222222", 32000, 34);
+        employees[1].employeeInfo();
+        employees[2] = new Employee("Alekseev Aleksey Alekseevich", "Manager",
+                "alekseev@gmail.com", "89273333333", 34000, 30);
+        employees[2].employeeInfo();
+        employees[3] = new Employee("Sidorova Marina Viktotovna", "Secretary",
+                "sidorova@gmail.com", "89274444444", 15000, 19);
+        employees[3].employeeInfo();
+        employees[4] = new Employee("Kosilov Nikita Vladimirovich", "Plumber",
+                "kosilov@gmail.com", "89275555555", 5000, 31);
+        employees[4].employeeInfo();
+
+    }
+
+    public static void lesson6part2() {
+        Park park = new Park("Парк Гагарина");
+        park.attractions = new Park.Attraction[2];
+        park.attractions[0] = new Park.Attraction("Американские горки", "9.00 - 18.00",
+                500);
+        park.attractions[1] = new Park.Attraction("Колесо обозрения", "9.00 - 15.00",
+                400);
+        park.parkInfo();
+
+        Park park1 = new Park("Загородный парк");
+        park1.attractions = new Park.Attraction[2];
+        park1.attractions[0] = new Park.Attraction("Батуты", "9.00 - 11.00",
+                100);
+        park1.attractions[1] = new Park.Attraction("Паровозик", "7.00 - 20.00",
+                700);
+        park1.parkInfo();
+    }
+
+
+    public static void lesson2() {
         System.out.println("Задание 1");
         printThreeWords();
         System.out.println("Задание 2 " + checkSumSign());
