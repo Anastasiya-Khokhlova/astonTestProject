@@ -3,10 +3,47 @@ package org.example;
 
 public class Main {
     public static void main(String[] args) {
-        //lesson2();
-        lesson6part1();
+        lesson10part1();
+        lesson10part2();
+    }
+
+    public static void lesson10part1() {
+        System.out.println("Часть 1:");
+        Dog dog1 = new Dog("Шелби");
+        Cat cat1 = new Cat("Саманта", 20);
+        dog1.run(300);
+        dog1.run(700);
+        dog1.swim(5);
+        dog1.swim(20);
+        cat1.run(100);
+        cat1.run(500);
+        cat1.swim(20);
+        Cat.catAmount();
+        Dog.dogAmount();
+        Animal.animalAmount();
         System.out.println();
-        lesson6part2();
+        Bowl bowl1 = new Bowl(0);
+        bowl1.addEat(50);
+        Cat[] cats = new Cat[3];
+        cats[0] = new Cat("Муся", 10);
+        cats[1] = new Cat("Маркиз", 30);
+        cats[2] = new Cat("Ксюша", 40);
+        cats[0].eat(bowl1);
+        cats[1].eat(bowl1);
+        cats[2].eat(bowl1);
+    }
+
+    public static void lesson10part2() {
+        System.out.println();
+        System.out.println("Часть 2:");
+        Circle circle1 = new Circle(3.75, "Серый", "Желтый");
+        Rectangle rectangle1 = new Rectangle(5, 2.5, "Голубой", "Синий");
+        Triangle triangle1 = new Triangle(5, 5.68, 3, "Фиолетовый", "Оранжевый");
+        circle1.figureInfo();
+        System.out.println();
+        rectangle1.figureInfo();
+        System.out.println();
+        triangle1.figureInfo();
     }
 
     public static void lesson6part1() {
