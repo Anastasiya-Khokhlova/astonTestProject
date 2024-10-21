@@ -1,4 +1,4 @@
-package org.example;
+package org.example.lesson10;
 
 public class Cat extends Animal {
     String catName;

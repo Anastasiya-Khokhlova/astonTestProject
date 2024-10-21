@@ -1,4 +1,4 @@
-package org.example;
+package org.example.lesson10;
 
 abstract public class Animal {
     static int amount;

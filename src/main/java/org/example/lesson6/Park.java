@@ -1,9 +1,9 @@
-package org.example;
+package org.example.lesson6;
 
 public class Park {
 
     String name;
-    Attraction[] attractions;
+    public Attraction[] attractions;
 
     public Park(String _name) {
         name = _name;

@@ -1,6 +1,10 @@
 package org.example;
 
 
+import org.example.lesson10.*;
+import org.example.lesson6.Employee;
+import org.example.lesson6.Park;
+
 public class Main {
     public static void main(String[] args) {
         lesson10part1();

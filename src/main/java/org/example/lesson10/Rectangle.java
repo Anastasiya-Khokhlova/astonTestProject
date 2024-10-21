@@ -1,6 +1,6 @@
-package org.example;
+package org.example.lesson10;
 
-class Rectangle implements Figure {
+public class Rectangle implements Figure {
     double width;
     double length;
     String fillColor;
